@@ -1,23 +1,25 @@
 import React from 'react'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import SavedPage from './pages/SavePage'
+import SearchPage from './pages/SearchPage'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <div>
+        <Link to='/'>Search</Link>
+        <Link to='/saved'>Saved</Link>
+        <Switch>
+          <Route exact path='/'>
+            <SearchPage />
+          </Route>
+          <Route path='/saved'>
+            <SavedPage />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  )
 }
 
 export default App

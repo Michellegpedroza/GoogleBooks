@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/Michellegpedroza/GoogleBooks#readme",
   "dependencies": {
+    "axios": "^0.19.1",
+    "concurrently": "^5.0.2",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.8.7",
-    "react": "^16.12.0"
+    "if-env": "^1.0.4",
+    "mongoose": "^5.8.9"
   },
   "devDependencies": {}
 }
