@@ -12,7 +12,7 @@ const Display = () => {
         books.map(book => book.items.map((next, i) => (
           <div className="container">
             <div className="card p-3">
-              <div className="card-header text-center">
+              <div className="card-header bg-info text-white text-center">
                 <h2 className="card-title" key={i}>{next.volumeInfo.title}</h2>
                     <h4 className="card-subtitle">{next.volumeInfo.authors}</h4>
               </div>
