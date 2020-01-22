@@ -1,1 +1,5 @@
-export { default } from './Book.js'
+const { model, Schema } = require('mongoose')
+
+module.exports = {
+  Book: require('./Book.js')(model, Schema)
+}

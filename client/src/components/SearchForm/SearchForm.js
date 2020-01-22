@@ -10,7 +10,7 @@ const Search = () => {
       <div className="jumbotron bg-light">
       <form>
         <div className="form-group mx-sm-5">
-          <label className="display-4 text-warning" htmlFor="book">Search For A Book</label>
+          <label className="display-4 text-info" htmlFor="book">Search For A Book</label>
           <input className="form-control" type='text' name='book' id='book' value={book} onChange={handleInputChange} />
         </div>
         <div className="form-group mt-2 mx-sm-5">

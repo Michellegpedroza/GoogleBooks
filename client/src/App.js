@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-import SavedPage from './pages/SavePage'
+import SavePage from './pages/SavePage'
 import SearchPage from './pages/SearchPage'
 import NavBar from './components/NavBar'
 
@@ -16,9 +16,8 @@ const App = () => {
             <SearchPage />
           </Route>
           <Route path='/saved'>
-            <NavBar/>
-            <br></br>
-            <SavedPage />
+            
+            <SavePage />
           </Route>
         </Switch>
       </div>

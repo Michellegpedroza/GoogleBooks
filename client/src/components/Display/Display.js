@@ -25,7 +25,7 @@ const Display = () => {
                 </div>
                 <div className="col-10">
                   <div className="card-body">
-                    <p class="card-text">{next.volumeInfo.description}</p>
+                    <p className="card-text">{next.volumeInfo.description}</p>
                   </div>
                 </div>
               </div>
